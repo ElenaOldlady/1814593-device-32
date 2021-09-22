@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Елена Васильева](https://up.htmlacademy.ru/htmlcss/32/user/1814593).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Локтев](https://htmlacademy.ru/profile/arloktev)
 
 ---
 
