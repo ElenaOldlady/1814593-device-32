@@ -1,0 +1,362 @@
+@font-face {
+    font-family: "raleway";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "rubik";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "rubik";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "rubik";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
+    font-display: swap;
+}
+body {
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    background-color: #ffffff;
+}
+header {
+    background-color: #FFE17F;
+    color: #000000;
+}
+.navigation {
+    font-family: inherit;
+    font-size: 18px;
+    color: #000000;
+}
+.navigation-link {
+    color: inherit;
+    text-decoration: none;
+}
+.navigetion-list {
+    line-height: 22px;
+    font-weight: 800;
+    color: inherit;
+}
+.navigation-user {
+    font-family: Rubic, sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #000000;
+}
+.slider-title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
+.slider-text {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+}
+.caption {
+    font-size: 16px;
+}
+.slider-info {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 30px;
+    color: #000000;
+}
+.category a{
+   font-weight: 800;
+   color: #000000;
+   text-decoration: none;
+   }
+.delivery-list a {
+    font-weight: 800;
+    line-height: 22px;
+    color: #FFE17F;
+    background-color: #000000;
+    text-decoration: none;
+}
+.delivery-caption {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
+.delivery-list p {
+    font-family: Rubik;
+    font-weight: 400;
+    line-height: 30px;
+    color: #444444;
+}   
+.delivery-crumbs {
+    font-weight: 800;
+    line-height: 22px;
+    color: #000000;
+    text-decoration: none;
+}
+/*ПРОПИСАТЬ РАЗДЕЛ О ДОСТАВКЕ РЕДКИХ ТОВАРОВ*/
+
+.about-us {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
+.about-text {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+.about-item {
+    font-family: Rubik;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+}
+.about a {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #000000;
+}
+.contact-title { 
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+}
+.contact-text {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+}
+.contacts-subtitle {
+    font-family: Rubik;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #444444;
+}
+.contacts-address-text {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+}
+.contacts-phone {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+}
+.contacts-schedule {
+    font-family: Rubik;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #444444;
+}
+.contacts-schedule-item {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+}
+.contacts a { 
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #000000;
+}
+.newsletter-title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+}
+.newsletter-text {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+}
+.newsletter-form {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+}
+.newsletter-button {
+    font-weight: 800;
+    line-height: 22px;
+    color: #000000;
+}
+.newsletter-free {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+}
+.footer {
+    color: #ffffff;
+    background-color: #444444;
+}
+.footer-contacts-address-text {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+}
+.footer-contacts-phone {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.fast-menu-item {
+    font-weight: 800;
+    line-height: 21px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.inner-name {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
+.breadcrumbs-list {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.filter {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.catalog-filter-title {
+    font-family: Rubik;
+    font-weight: 700;
+    line-height: 20px;
+}
+.control-label {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.bluetooth-be{
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.bluetooth-no {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.filter-button {
+    font-weight: 800;
+    line-height: 21px;
+}
+.sorting {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+}
+.popular {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.product-card-link {
+    font-family: Rubik;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+}
+.product-card-price {
+    font-family: Rubik;
+    font-weight: 400;
+    line-height: 22px;
+}
+.button-download {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+}
+.pagination-back {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #000000;
+}
+.pagination-forward {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #000000;
+}
+.pagination-current {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #444444;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
