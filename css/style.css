@@ -149,9 +149,6 @@ body {
 	list-style-type: none;	
 	margin: 0 auto;
 	padding: 0;
-
-	outline: 5px solid green;
-	outline-offset: -5px;
 }
 
 
@@ -159,9 +156,6 @@ body {
 	width: 160px;
 	height: 160px;
 	margin-right: 40px;
-
-	outline: 5px solid red;
-	outline-offset: -5px;
 }
 
 .category-item:last-child {
@@ -202,6 +196,47 @@ body {
    color: #000000;
    text-decoration: none;
 }
+/*Каталог товаров */
+
+.catalog-products {
+	display: flex;
+}
+
+.filter {
+   font-weight: 800;
+   font-size: 16px;
+   line-height: 19px;
+   color: #000000;
+	padding-left: 200px;
+	padding-right: 32px;
+}
+
+.filter-catalog {
+	width: 200px;
+	padding-right: 69px;
+	padding-left: 150px;
+}
+
+.catalog-filter-title {
+   font-family: Rubik, sans-serif;
+   font-weight: 700;
+   line-height: 20px;
+}
+
+.catalog-filter-list {
+	list-style-type: none;
+}
+
+.filter-button {
+   font-weight: 800;
+   line-height: 21px;
+}
+.catalog-right-column {
+	width: 800;
+	margin:auto;
+	padding-right: 140px;
+	padding-left: 540px;
+}
 
 .rare-product {
    font-weight: 800;
@@ -220,6 +255,7 @@ body {
    font-weight: 800;
    font-size: 50px;
    line-height: 50px;
+	width: 560px;
 }
 
 .about-text {
@@ -373,34 +409,29 @@ body {
    font-size: 50px;
    line-height: 50px;
 }
+.breadcrumbs {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	font-weight: 500;
+}
 
 .breadcrumbs-list {
    font-family: Rubik, sans-serif;
-   font-weight: 400;
+   font-weight: 500;
    font-size: 16px;
    line-height: 19px;
    color: #000000;
    text-decoration: none;
 }
 
-.filter {
-   font-weight: 800;
-   font-size: 16px;
-   line-height: 19px;
-   color: #000000;
-}
-
-.catalog-filter-title {
-   font-family: Rubik, sans-serif;
-   font-weight: 700;
-   line-height: 20px;
-}
 
 .control-label {
    font-family: Rubik, sans-serif;
    font-weight: 400;
    font-size: 16px;
    line-height: 19px;
+	list-style-type: none;
 }
 
 .bluetooth-function {
@@ -408,11 +439,6 @@ body {
    font-weight: 400;
    font-size: 16px;
    line-height: 19px;
-}
-
-.filter-button {
-   font-weight: 800;
-   line-height: 21px;
 }
 
 .sorting {
@@ -425,6 +451,11 @@ body {
    font-weight: 400;
    font-size: 16px;
    line-height: 19px;
+}
+
+/* Карточки товара */
+.product-card {
+	list-style-type: none;
 }
 
 .product-card-link {
@@ -445,6 +476,10 @@ body {
    font-weight: 800;
    font-size: 16px;
    line-height: 19px;
+}
+
+.pagination-item {
+	display: inline;
 }
 
 .pagination-back {
