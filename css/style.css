@@ -64,28 +64,28 @@ body {
 	overflow: hidden;
 }
 .container {
-	max-width: 1160px;
-	width: 100%;
+	width: 1160px;
 	margin: 0 auto;
+	padding: 0;
 }
 
 .logo {
-	margin-top: 17px;
+	margin: 0;
+	margin-bottom: 32px;
 	margin-left: 61px;
 }
 
 .page-header {
 	background-color: #ffe17f;
-	width: 1160px;
 	margin: 0 auto;
-	margin-top: 40px;
+	margin-top: 17px;
 }
 
 /* Навигация сайта */
-
 .navigation {
 	margin: 0;
 	padding: 0;
+	box-shadow: 0 -137px 0 0 white;
 }
 
 .navigation-link {
@@ -107,13 +107,39 @@ body {
 	display: flex;
 	justify-content: space-between;
 	padding: 0;
+	margin: 0;
+	margin-bottom: 44px;
 }
 
 .navigation-menu {
+	text-transform: uppercase;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 0;
+	margin: 0;
+	margin-bottom: 14px;
+}
+
+.navigation-list {
+	padding-right: 59px;
+}
+
+.navigation-button {
+	display: inline-block;
+	border: none;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	background: url("/image/search.svg") no-repeat;
+	background-size: contain;
+}
+
+.navigation-input {
+	background-color: #ffe17f;
+	border: none;
+	font-size: 16px;
+	margin-left: 20px;
 }
 
 .navigation-item:nth-child(1) {
@@ -123,30 +149,96 @@ body {
 
 .navigation-item {
 	list-style-type: none;
+	padding-right: 25px;
+	word-spacing: 19px 62px;
 }
+
 
 /*Слайдер */
 .main-container {
 	flex-grow: 1;
+	margin: 0;
+	padding: 0;
 }
 
-.gallery-div {
+.gallery {
+	margin: 0;
+	padding: 0;
+}
+
+.gallery-image {
 	margin-right: 40px;
+	position: relative;
+}
+
+.slider-image-link {
+	margin: 0;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.2em;
+	color: #000000;
+	display: inline-block;
+	width: 220px;
+	background: url("/image/vectoryellow.png") repeat-x 0 50%;
+
+}
+
+.slider-prev {
+	background-image: url("/image/leftbutton.svg");
+	width: 20px;
+	height: 60px;
+	cursor: pointer;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	left: 19px;
+}
+
+.slider-next {
+	background-image: url("/image/rightbutton.svg");
+	width: 20px;
+	height: 60px;
+	cursor: pointer;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	right: 19px;
 }
 
 .gallery-list {
 	list-style-type: none;
 	padding: 0;
+	margin: 0;
+	box-shadow: inset 0 150px 0 0 #ffe17f;
 }
 
 .gallery-item {
 	display: flex;
 }
 
+.title-text {
+	padding: 0;
+	margin: 0;
+	margin-top: 121px;
+}
+
 .slider-title {
 	font-weight: 800;
 	font-size: 50px;
 	line-height: 50px;
+	margin: 0;
 }
 
 .slider-text {
@@ -156,6 +248,13 @@ body {
 	color: #444444;
 }
 
+.description {
+	margin: 0;
+	padding: 0;
+	margin-top: 28px;
+	margin-bottom: 50px;
+}
+
 .slider-sign {
 	display: flex;
 	flex-direction: row;
@@ -163,6 +262,8 @@ body {
 
 .caption {
 	font-size: 16px;
+	margin: 0;
+	
 }
 
 .slider-info {
@@ -170,6 +271,9 @@ body {
 	font-size: 36px;
 	line-height: 30px;
 	width: 160px;
+	margin: 0;
+	margin-top: 65px;
+	margin-bottom: 11px;
 }
 
 /* Категория */
@@ -186,6 +290,9 @@ body {
 	column-gap: 40px;
 	list-style-type: none;
 	padding: 0;
+	margin: 0;
+	margin-top: 63px;
+
 }
 
 .category-item-image {
@@ -199,6 +306,9 @@ body {
 
 .category-item-text {
 	text-align: start;
+	width: 160px;
+	margin: 0;
+	margin-top: 33px;
 }
 
 /* Сервис */
@@ -207,6 +317,8 @@ body {
 	margin: 0;
 	padding: 0;
 	display: flex;
+	background-color: #f0f0f0;
+	margin-bottom: 90px;
 }
 
 .delivery-servis-credit {
@@ -217,11 +329,6 @@ body {
 
 .delivery-list {
 	list-style-type: none;
-}
-
-.delivery-item {
-	display: flex;
-	flex-direction: row;
 }
 
 .delivery-item a {
@@ -265,7 +372,7 @@ body {
 	display: flex;
 }
 
-.filter {
+.filter-title {
 	font-weight: 800;
 	font-size: 16px;
 	line-height: 19px;
@@ -296,25 +403,29 @@ body {
 	margin: auto;
 }
 
-/* О нас-Контакты */
+/* Информация "О нас" и "Контакты" */
 
-.rareproduct-div {
+/*Доставим редкий товар под заказ*/
+.rareproduct {
 	display: flex;
 	flex-direction: row;
-}
+	background-color: #f0f0f0;
 
-.rareproduct-image {
-	display: block;
-	margin: auto;
+	outline: 2px solid red;
+	outline-offset: -2px;
 }
 
 .image-rareproduct {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	width: 125px;
 	height: 100px;
 	background-color: #ffe17f;
+	position: relative;
+}
+
+.rareproduct-image {
+	position: absolute;
+	top: 35px;
+	left: 39px;
 }
 
 .rare-product {
@@ -322,17 +433,30 @@ body {
 	font-size: 20px;
 	line-height: 24px;
 	color: #000000;
-	background-color: #f0f0f0;
 	flex-grow: 1;
+	display: block;
+	text-align: center;
+	margin-top: 37px;
+	margin-bottom: 43px;
 }
-
+/*О нас и контакты*/
 .about-contacts {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 146px;
+	width: 100%;
+	padding-top: 90px;
+	padding-bottom: 87px;
 }
+
+/*О нас*/
+
 .about {
 	margin: 0;
 	padding: 0;
+	width: 500px;
+	background: url("/image/vectorblack.png") no-repeat top left;
 }
 
 .about-us {
@@ -340,49 +464,76 @@ body {
 	font-size: 50px;
 	line-height: 50px;
 	width: 560px;
-	color: #444444;
+	color: #000000;
+	padding-bottom: 20px;
+	margin-bottom: 26px;
 }
 
 .about-text {
 	font-family: Rubik, sans-serif;
 	font-size: 18px;
 	line-height: 30px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
 }
 
-.about-item {
+.about-list {
 	font-family: Rubik, sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 20px;
 	color: #000000;
+	list-style-type: none;
+	margin-top: 80px;
+	margin-bottom: 78px;
 }
 
-.about a {
+.about-item {
+	line-height: 30px;
+}
+
+.about-link {
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 22px;
 	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.2em;
 	color: #000000;
+	display: inline-block;
+	width: 260px;
+	background: url("/image/vectoryellow.png") repeat-x 0 50%;
 }
+
+/*Контакты*/
 
 .contacts {
 	margin: 0;
 	padding: 0;
-	width: 560px;
+	width: 515px;
+	background: url("/image/vectorblack.png") no-repeat top left;
 }
 
-.contact-title {
+.contacts-title {
 	font-weight: 800;
 	font-size: 50px;
 	line-height: 50px;
+	width: 560px;
+	color: #000000;
+	padding-bottom: 20px;
+	margin-top: 42px;
+	margin-bottom: 26px;
 }
 
-.contact-text {
+.contacts-text {
 	font-family: Rubik, sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 30px;
 	color: #444444;
+	margin-bottom: 30px;
 }
 
 .contacts-subtitle {
@@ -391,6 +542,7 @@ body {
 	font-size: 24px;
 	line-height: 30px;
 	color: #444444;
+	margin-bottom: 15px;
 }
 
 .contacts-address-text {
@@ -399,6 +551,8 @@ body {
 	font-size: 18px;
 	line-height: 30px;
 	color: #444444;
+	margin: 0;
+	margin-top: 15px;
 }
 
 .contacts-phone {
@@ -407,6 +561,9 @@ body {
 	font-size: 18px;
 	line-height: 30px;
 	color: #000000;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
 }
 
 .contacts-schedule {
@@ -415,6 +572,14 @@ body {
 	font-size: 24px;
 	line-height: 30px;
 	color: #444444;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.contacts-schedule-list {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 67px;
 }
 
 .contacts-schedule-item {
@@ -423,21 +588,36 @@ body {
 	font-size: 18px;
 	line-height: 30px;
 	color: #444444;
+	list-style-type: none;
 }
 
-.contacts a {
+.contacts-link {
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 22px;
 	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.2em;
 	color: #000000;
+	display: inline-block;
+	width: 260px;
+	background: url("/image/vectoryellow.png") repeat-x 0 50%;
 }
+
+/*Подпись на рассылку*/
 
 .newsletter {
 	margin: 0;
 	padding: 0;
+	background-color: #f0f0f0;
 	display: flex;
 	flex-direction: column;
+}
+
+.newsletter-title-text {
+	display: flex;
+	flex-direction: row;
 }
 
 .newsletter-title {
@@ -445,6 +625,7 @@ body {
 	font-size: 50px;
 	line-height: 50px;
 	color: #000000;
+	width: 560px;
 }
 
 .newsletter-text {
@@ -461,6 +642,8 @@ body {
 	font-size: 18px;
 	line-height: 30px;
 	color: #444444;
+	display: flex;
+	flex-direction: row;
 }
 
 .newsletter-button {
