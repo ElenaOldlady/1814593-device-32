@@ -11,38 +11,39 @@
 	<header class="page-header">
 		<div class="container">
 			<h1 class="visually-hidden">device</h1>
-			<img class="logo" src="image/deviceheader.svg" alt="логотип device" width="145" heigth="36">
+			<img class="logo" src="image/deviceheader.svg" alt="логотип device" width="145" height="36">
 			<nav class="navigation">
-				<ul class="navigation-list navigation-user">
-					<li class="navigation-item search-button">
-						<form class="navigation-form" action="#" method="post">
-							<button class="navigation-button" type="submit"></button>
-							<input class="navigation-input" type="search" name="search" id="search"
-								placeholder="Поиск по сайту">
-						</form>
+				<div class="navigation-block">
+					<form class="search-form" action="#" method="post">
+						<!--<button class="search-button" type="submit"></button>-->
+						<input class="search-input navigation-text" type="search" name="search" id="search" placeholder="Поиск по сайту">
+					</form>
+					<ul class="navigation-user">
+						<li class="navigation-user-item">
+							<a class="navigation-user-link navigation-text" href="#">Войти</a>
+						</li>
+					</ul>
+					<ul class="navigation-alternative">
+						<li class="navigation-alternative-item">
+							<a class="navigation-alternative-link navigation-text" href="#">Сравнить</a>
+						</li>
+						<li class="navigation-alternative-item">
+							<a class="navigation-alternative-link navigation-text" href="#">Корзина</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="navigation-menu">
+					<li class="navigation-menu-item">
+						<a class="navigation-menu-link navigation-plus" href="/catalog.html">Каталог товаров</a>
 					</li>
-					<li class="navigation-item">
-						<a class="navigation-link" href="#">Войти</a>
+					<li class="navigation-menu-item">
+						<a class="navigation-menu-link" href="#">Доставка</a>
 					</li>
-					<li class="navigation-item">
-						<a class="navigation-link" href="#">Сравнить</a>
+					<li class="navigation-menu-item">
+						<a class="navigation-menu-link" href="#">Гарантия</a>
 					</li>
-					<li class="navigation-item">
-						<a class="navigation-link" href="#">Корзина</a>
-					</li>
-				</ul>
-				<ul class="navigation-list navigation-menu">
-					<li class="navigation-item">
-						<a class="navigation-link navigetion-plus" href="/catalog.html">Каталог товаров</a>
-					</li>
-					<li class="navigation-item">
-						<a class="navigation-link" href="#">Доставка</a>
-					</li>
-					<li class="navigation-item">
-						<a class="navigation-link" href="#">Гарантия</a>
-					</li>
-					<li class="navigation-item">
-						<a class="navigation-link" href="#">Контакты</a>
+					<li class="navigation-menu-item">
+						<a class="navigation-menu-link" href="#">Контакты</a>
 					</li>
 				</ul>
 			</nav>
@@ -56,21 +57,21 @@
 				<ul class="gallery-list">
 					<li class="gallery-item">
 						<div class="gallery-image">
-							<button class="slider-button slider-prev" type="button">
+							<button class="slider-btn slider-btn-prev" type="button">
 								<span class="visually-hidden">Предыдущее фото</span>
 							</button>
 							<img class="slider-image" src="image/slider1.png" alt="Порхает как бабочка, жалит как пчела!"
 								width="560" height="560">
-							<button class="slider-button slider-next" type="button">
+							<button class="slider-btn slider-btn-next" type="button">
 								<span class="visually-hidden">Следующее фото</span>
 							</button>
 						</div>
 						<div class="title-text">
 							<p class="slider-title"> Порхает как бабочка, жалит как пчела!</p>
-							<p class="slider-text description">Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером,
+							<p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером,
 								замаскированным под стандартную камеру.
 							</p>
-							<a class="slider-image-link" href="#">Подробнее</a>
+							<a class="btn-link " href="#">Подробнее</a>
 							<div class="slider-sign">
 								<div class="distance-radius">
 									<p class="slider-info">800 м</p>
@@ -162,15 +163,14 @@
 				<h2 class="visually-hidden">Сервис</h2>
 				<div class="delivery-servis-credit">
 					<div class="delivery-tab">
-						<ul class="delivery-list">
-							<li class="delivery-item"> <a href="#">Доставка</a> </li>
-							<li> <a href="#">Гарантия</a> </liss=>
-							<li> <a href="#">Кредит</ass=>
-							</li>
+						<ul class="delivery-tab-list">
+							<li class="delivery-tab-item"><a href="#">Доставка</a> </li>
+							<li><a href="#">Гарантия</a></li>
+							<li><a href="#">Кредит</a></li>
 						</ul>
 					</div>
 					<div class="delivery-content">
-						<ul>
+						<ul class="delivery-content-list">
 							<li class="caption-content">
 								<div class="caption-description">
 									<p class="delivery-caption">Доставка</p>
@@ -208,7 +208,7 @@
 							<li class="about-item">Сдик</li>
 							<li class="about-item">ТоксБерри</li>
 						</ul>
-						<a class="about-link" href="#">Подробнее о нас</a>
+						<a class="about-link btn-link" href="#">Подробнее о нас</a>
 					</section>
 					<section class="contacts">
 						<h2 class="contacts-title">Контакты</h2>
@@ -222,7 +222,7 @@
 							<li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
 							<li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
 						</ul>
-						<a class="contacts-link" href="#">Напишите нам</a>
+						<a class="contacts-link btn-link" href="#">Напишите нам</a>
 					</section>
 				</div>
 			</div>
