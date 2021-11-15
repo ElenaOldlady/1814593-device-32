@@ -63,116 +63,174 @@ body {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
 .container {
-	max-width: 1160px;
-	width: 100%;
+	max-width: 1190px;
 	margin: 0 auto;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 
-.logo {
-	margin-top: 17px;
-	margin-left: 61px;
-}
+/*Шапка сайта*/
 
 .page-header {
+	width: 100%;
 	background-color: #ffe17f;
-	width: 1160px;
 	margin: 0 auto;
-	margin-top: 40px;
 }
 
-/* Навигация сайта */
+.header-wrapper {
+	width: 100%;
+	padding-left: 60px;
+	padding-right: 60px;
+
+	box-shadow: 0 50px 0 0 white;
+}
+
+/*Логотип*/
+.logo {
+	margin-top: 17px;
+	margin-left: 1px;
+}
+
+/* Навигация сайта всё, что внутри тега <nav>*/
 
 .navigation {
-	margin: 0;
+	margin-top: 0;
 	padding: 0;
 }
 
-.navigation-link {
-	text-decoration: none;
-	color: #000000;
-	font-size: 18px;
+.user-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 0;
+	padding: 0;
 }
-
-.navigation-list {
-	line-height: 22px;
-	font-weight: 800;
-}
-
-.navigation-user {
+/* Кнопка поиск по сайту*/
+.user-text {
 	font-family: Rubik, sans-serif;
 	font-size: 16px;
 	line-height: 19px;
-	color: #000000;
-	display: flex;
-	justify-content: space-between;
+	text-align: start;
+}
+
+.search-form {
+	margin-top: 20px;
+	margin-right: auto;
+	position: relative;
+}
+
+.search-form::before {
+	content: "";
+	position: absolute;
+	top: 20px;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	background-image: url("../image/search.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: translateY(-50%);
+}
+
+.search-input {
+	background-color: #ffe17f;
+	border: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 37px;
+}
+/* кнопка - Войти*/
+
+.user {
+	margin-top: 25px;
+	margin-right: 181px;
 	padding: 0;
 }
 
+.user-link {
+	text-decoration: none;
+	color: #000000;
+}
+
+.user-item {
+	text-align: center;
+	list-style: none;
+	padding-top: 6px;
+	padding-bottom: 10px;
+	margin-right: 50px;
+}
+
+/* кнопка СРАВНИТЬ+КОРЗИНА*/
+
+.user-alternative {
+	padding: 0;
+	list-style: none;
+	margin-top: 28px;
+	margin-right: 59px;
+}
+
+.user-alternative-link {
+	font-family: Rubik, sans-serif;
+	font-size: 16px;
+	line-height: 19px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.user-alternative-item {
+	display: inline;
+}
+
+/* Раздел navigation-menu */
 .navigation-menu {
+	text-transform: uppercase;
+	list-style-type: none;
+	letter-spacing: 0.2em;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 0;
+	margin-top: 10px;
+	margin-bottom: 14px;
 }
 
-.navigation-list {
-	padding-right: 59px;
+.navigation-menu-link {
+	text-decoration: none;
+	color: #000000;
 }
 
-.navigation-button {
-	display: inline-block;
-	border: none;
-	width: 16px;
-	height: 16px;
-	cursor: pointer;
-	background: url("/image/search.svg") no-repeat;
-	background-size: contain;
+.navigation-menu-item {
+	margin-left: 0;
 }
 
-.navigation-input {
-	background-color: #ffe17f;
-	border: none;
-	font-size: 16px;
-	margin-left: 20px;
+.navigation-menu-item:first-child {
+	margin-right: auto;
 }
 
-.navigation-item:nth-child(1) {
-	margin-left: 60px;
-	margin-right: 304px;
-}
-
-
-.navigation-item {
-	list-style-type: none;
-	padding-right: 25px;
-	word-spacing: 19px 62px;
-}
-
-.one {
-font-size: 180px;
-color: #FFFFFF;
-font-family: Rubik;
-font-style: normal;
-font-weight: 800;
-font-size: 180px;
-line-height: 30px;
-margin: 0 auto;
-padding-left: 861px;
-padding-right: 49px;
-}
-
-/*Слайдер */
+/*Основная часть сайта*/
 .main-container {
 	flex-grow: 1;
+	margin: 0;
+	padding: 0;
 }
 
-.gallery-div {
+/*Слайдер*/
+.gallery {
+	margin: 0;
+	padding: 0;
+}
+
+.gallery-image {
 	margin-right: 40px;
+	position: relative;
+	display: inline-flex;
 }
 
-.slider-prev {
-	background-image: url("/image/leftbutton.svg");
+/*Кнопки слайдера*/
+
+.slider-btn {
 	width: 20px;
 	height: 60px;
 	cursor: pointer;
@@ -181,51 +239,111 @@ padding-right: 49px;
 	background-position: center;
 	border: none;
 	background-color: white;
-	padding-left: 19px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
-.slider-next {
-	background-image: url("/image/rightbutton.svg");
-	width: 20px;
-	height: 60px;
-	cursor: pointer;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	border: none;
-	background-color: white;
-	padding-left: 522px;
+.slider-btn-prev {
+	background-image: url("../image/leftbutton.svg");
+	left: 19px;
+}
+
+.slider-btn-next {
+	background-image: url("../image/rightbutton.svg");
+	right: 19px;
 }
 
 .gallery-list {
 	list-style-type: none;
 	padding: 0;
+	margin: 0;
+	box-shadow: inset 0 150px 0 0 #ffe17f;
 }
 
 .gallery-item {
 	display: flex;
+	position: relative;
 }
+
+.gallery-item::before {
+	counter-increment: section;
+	content: "0" counter(section);
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 180px;
+	line-height: 30px;
+	color: white;
+	position: absolute;
+	right: 49px;
+	top: 82px;
+}
+
+.title-text {
+	padding: 0;
+	margin-top: 122px;
+	z-index: 1;
+}
+
+/*Описание к слайдеру*/
 
 .slider-title {
 	font-weight: 800;
 	font-size: 50px;
 	line-height: 50px;
+	margin: 0;
 }
 
 .slider-text {
 	font-family: Rubik, sans-serif;
+	font-style: normal;
 	font-size: 18px;
 	line-height: 30px;
 	color: #444444;
+	margin-top: 28px;
+	margin-bottom: 36px;
 }
+
+.btn-link {
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #000000;
+	display: inline-block;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-left: 39px;
+	min-width: 220px;
+	position: relative;
+}
+
+.btn-link::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 8px;
+	background-color: #ffe17f;
+	transform: translateY(-50%);
+	z-index: -1;
+}
+
+/*Подпись характеристик*/
 
 .slider-sign {
 	display: flex;
 	flex-direction: row;
+	margin-top: 54px;
 }
 
 .caption {
 	font-size: 16px;
+	margin: 0;
 }
 
 .slider-info {
@@ -233,6 +351,8 @@ padding-right: 49px;
 	font-size: 36px;
 	line-height: 30px;
 	width: 160px;
+	margin-top: 0;
+	margin-bottom: 11px;
 }
 
 /* Категория */
@@ -245,15 +365,17 @@ padding-right: 49px;
 
 .category-list {
 	display: grid;
-	grid-template-columns: 160px 160px 160px 160px 160px 160px;
+	grid-template-columns: repeat(6, 1fr);
 	column-gap: 40px;
 	list-style-type: none;
 	padding: 0;
+	margin: 0;
+	margin-top: 70px;
 }
 
 .category-item-image {
 	background-color: #ffe17f;
-	width: 160px;
+
 	height: 160px;
 	display: flex;
 	align-items: center;
@@ -262,37 +384,88 @@ padding-right: 49px;
 
 .category-item-text {
 	text-align: start;
+	width: 160px;
+	margin: 0;
+	margin-top: 33px;
+}
+
+.picture-image {
+	align-items: flex-end;
 }
 
 /* Сервис */
 
 .delivery {
-	margin: 0;
-	padding: 0;
-	display: flex;
+	background-color: #f0f0f0;
+	box-shadow: inset 0 94px 0 0 white;
 }
 
 .delivery-servis-credit {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	margin-top: 69px;
+	margin-bottom: 90px;
 }
 
-.delivery-list {
-	list-style-type: none;
+.delivery-tab {
+	padding-right: 4px;
+	position: relative;
 }
 
-.delivery-item {
-	display: flex;
-	flex-direction: row;
-}
-
-.delivery-item a {
-	font-weight: 800;
-	line-height: 22px;
-	color: #ffe17f;
+.delivery-tab::after {
+	content: " ";
+	width: 7px;
+	height: 100%;
 	background-color: #000000;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.delivery-tab-list {
+	list-style-type: none;
+	text-transform: uppercase;
+	padding: 0;
+	margin-top: 74px;
+	margin-bottom: 50px;
+}
+
+.delivery-tab-item {
+	margin: 0;
+	margin-bottom: 24px;
+}
+
+.tab-item-black {
+	width: 280px;
+	background-color: #000000;
+}
+
+.tab-item-other {
+	width: 160px;
+	text-align: center;
+}
+
+.delivey-tab-link {
+	font-weight: 800;
+	line-height: 18px;
+	letter-spacing: 0.2em;
+	color: #000000;
+	display: inline-block;
 	text-decoration: none;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	padding-left: 18px;
+	margin-right: 0;
+}
+
+.tab-link-yellow {
+	color: #ffe17f;
+}
+
+.delivery-content-list {
+	margin: 0;
+	margin-top: 15px;
+	margin-left: 77px;
 }
 
 .caption-content {
@@ -305,45 +478,54 @@ padding-right: 49px;
 	font-weight: 800;
 	font-size: 50px;
 	line-height: 50px;
-}
-
-.delivery-item p {
-	font-family: Rubik, sans-serif;
-	font-weight: 400;
-	line-height: 30px;
-	color: #444444;
+	margin-bottom: 33px;
 }
 
 .delivery-description {
 	font-family: Rubik, sans-serif;
 	font-weight: 400;
 	font-size: 18px;
+	line-height: 30px;
 	color: #444444;
 	width: 497px;
 }
 
-/*Каталог товаров */
+.delivery-image {
+	margin-top: 64px;
+	margin-left: 60px;
+}
+
+/* Фильтр каталога товара*/
 
 .catalog-products {
 	display: flex;
+	width: 1440px;
 }
 
 .filter-title {
+	width: 468px;
+	height: 70px;
 	font-weight: 800;
 	font-size: 16px;
 	line-height: 19px;
 	color: #000000;
 	text-transform: uppercase;
+	background-color: #dcdcdc;
+	padding-left: 200px;
+	padding-top: 25px;
 }
 
 .filter-catalog {
-	width: 200px;
+	width: 468px;
+	background-color: #ebebeb;
+	margin-right: 72px;
 }
 
 .catalog-filter-title {
 	font-family: Rubik, sans-serif;
 	font-weight: 700;
 	line-height: 20px;
+	padding-left: 199px;
 }
 
 .catalog-filter-list {
@@ -354,48 +536,80 @@ padding-right: 49px;
 	font-weight: 800;
 	line-height: 21px;
 }
+
+/*ЦВЕТ*/
+.catalog-filter-group {
+	display: inline-block;
+}
+
+/*Сортировка*/
 .catalog-right-column {
-	width: 800px;
 	margin: auto;
 }
 
-/* О нас-Контакты */
-
-.rareproduct-div {
-	display: flex;
-	flex-direction: row;
+.sorting-type {
+	width: 972px;
+	height: 70px;
+	background-color: #ebebeb;
+	padding-top: 25px;
+	padding-left: 72px;
 }
 
-.rareproduct-image {
-	display: block;
-	margin: auto;
+.sorting {
+	width: 972px;
+	height: 70px;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+/*Доставим редкий товар под заказ*/
+.rareproduct {
+	background-color: #f0f0f0;
 }
 
 .image-rareproduct {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	width: 125px;
 	height: 100px;
 	background-color: #ffe17f;
+	position: relative;
 }
 
-.rare-product {
+.rareproduct-image {
+	position: absolute;
+	top: 35px;
+	left: 39px;
+}
+
+.rareproduct-link {
 	font-weight: 800;
 	font-size: 20px;
 	line-height: 24px;
 	color: #000000;
-	background-color: #f0f0f0;
 	flex-grow: 1;
+	display: block;
+	text-align: center;
+	margin-top: 37px;
+	margin-bottom: 43px;
 }
-
+/*О нас и контакты*/
 .about-contacts {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 53px;
+	width: 100%;
+	padding-top: 90px;
+	padding-bottom: 87px;
 }
+
+/*О нас*/
+
 .about {
 	margin: 0;
 	padding: 0;
+	width: 50%;
+	margin-right: 40px;
 }
 
 .about-us {
@@ -403,49 +617,86 @@ padding-right: 49px;
 	font-size: 50px;
 	line-height: 50px;
 	width: 560px;
-	color: #444444;
+	color: #000000;
+	margin: 0;
+	padding-top: 50px;
+	padding-bottom: 18px;
+	background: url("/image/vectorblack.png") no-repeat top left;
 }
 
 .about-text {
 	font-family: Rubik, sans-serif;
 	font-size: 18px;
 	line-height: 30px;
+	margin: 0;
+	padding: 0;
+	margin-top: 28px;
+	margin-bottom: 30px;
 }
 
-.about-item {
+.about-list {
 	font-family: Rubik, sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 20px;
 	color: #000000;
+	list-style-type: none;
+	margin-top: 69px;
+	margin-bottom: 53px;
+	padding-left: 0;
 }
 
-.about a {
-	font-weight: 800;
-	font-size: 18px;
-	line-height: 22px;
-	text-decoration: none;
-	color: #000000;
+.about-item {
+	line-height: 30px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
 }
+
+.about-item::before {
+	content: "";
+	width: 8px;
+	height: 8px;
+	background-color: #ffc700;
+	border-radius: 50%;
+	margin-right: 26px;
+}
+
+.about-link {
+	display: inline-block;
+	min-width: 260px;
+	padding-left: 19px;
+}
+
+/*Контакты*/
 
 .contacts {
 	margin: 0;
 	padding: 0;
-	width: 560px;
+	width: 50%;
 }
 
-.contact-title {
+.contacts-title {
 	font-weight: 800;
 	font-size: 50px;
 	line-height: 50px;
+	width: 100%;
+	color: #000000;
+	margin: 0;
+	padding-top: 50px;
+	padding-bottom: 18px;
+	background: url("/image/vectorblack.png") no-repeat top left;
 }
 
-.contact-text {
+.contacts-text {
 	font-family: Rubik, sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 30px;
 	color: #444444;
+	margin-top: 28px;
+	margin-bottom: 30px;
 }
 
 .contacts-subtitle {
@@ -454,6 +705,7 @@ padding-right: 49px;
 	font-size: 24px;
 	line-height: 30px;
 	color: #444444;
+	margin-bottom: 15px;
 }
 
 .contacts-address-text {
@@ -462,6 +714,8 @@ padding-right: 49px;
 	font-size: 18px;
 	line-height: 30px;
 	color: #444444;
+	margin: 0;
+	margin-top: 15px;
 }
 
 .contacts-phone {
@@ -470,6 +724,9 @@ padding-right: 49px;
 	font-size: 18px;
 	line-height: 30px;
 	color: #000000;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
 }
 
 .contacts-schedule {
@@ -478,6 +735,14 @@ padding-right: 49px;
 	font-size: 24px;
 	line-height: 30px;
 	color: #444444;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.contacts-schedule-list {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 52px;
 }
 
 .contacts-schedule-item {
@@ -486,21 +751,26 @@ padding-right: 49px;
 	font-size: 18px;
 	line-height: 30px;
 	color: #444444;
+	list-style-type: none;
 }
 
-.contacts a {
-	font-weight: 800;
-	font-size: 18px;
-	line-height: 22px;
-	text-decoration: none;
-	color: #000000;
+.contacts-link {
+	display: inline-block;
+	width: 260px;
+	padding-left: 35px;
 }
+
+/*Подпись на рассылку*/
 
 .newsletter {
-	margin: 0;
-	padding: 0;
+	background-color: #f0f0f0;
+}
+
+.newsletter-title-text {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 50px;
 }
 
 .newsletter-title {
@@ -508,6 +778,9 @@ padding-right: 49px;
 	font-size: 50px;
 	line-height: 50px;
 	color: #000000;
+	width: 50%;
+	margin-top: 60px;
+	margin-right: 40px;
 }
 
 .newsletter-text {
@@ -516,6 +789,8 @@ padding-right: 49px;
 	font-size: 18px;
 	line-height: 30px;
 	color: #444444;
+	width: 50%;
+	margin-top: 70px;
 }
 
 .newsletter-form {
@@ -524,13 +799,41 @@ padding-right: 49px;
 	font-size: 18px;
 	line-height: 30px;
 	color: #444444;
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 50px;
 }
 
 .newsletter-button {
-	font-weight: 800;
-	line-height: 22px;
+	padding: 0;
+	margin: 0;
 	color: #000000;
 }
+
+.newsletter-button-text {
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
+.newsletter-input {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	opacity: 0.5;
+	line-height: 30px;
+	width: 100%;
+	margin-right: auto;
+	background-color: #f0f0f0;
+	border: none;
+}
+
 .newsletter-free {
 	font-family: Rubik, sans-serif;
 	font-weight: 400;
@@ -539,37 +842,28 @@ padding-right: 49px;
 	color: #444444;
 }
 
-.fast-menu-link {
-	display: flex;
-	flex-direction: row;
-}
-
-.fast-menu-item {
-	font-weight: 800;
-	line-height: 21px;
-	color: #ffffff;
-	text-decoration: none;
-}
-
 /* Навигация по меню */
 
-.filter-catalog {
-	width: 236px;
-	margin-left: 200px;
-}
-
 .inner-name {
+	font-style: normal;
 	font-weight: 800;
 	font-size: 50px;
 	line-height: 50px;
+	width: 560px;
+	height: 60px;
+	margin-top: 37px;
 }
 .breadcrumbs {
 	list-style-type: none;
 	display: flex;
+	margin: 0;
+	padding-top: 14px;
+	padding-bottom: 49px;
 	font-weight: 500;
+	margin-right: 74px;
 }
 
-.breadcrumbs-list {
+.breadcrumbs-link {
 	font-family: Rubik, sans-serif;
 	font-weight: 500;
 	font-size: 16px;
@@ -593,12 +887,6 @@ padding-right: 49px;
 	line-height: 19px;
 }
 
-.sorting {
-	font-weight: 800;
-	font-size: 16px;
-	line-height: 19px;
-}
-
 .popular {
 	font-weight: 400;
 	font-size: 16px;
@@ -608,10 +896,10 @@ padding-right: 49px;
 /* Карточки товара */
 .product-list {
 	display: grid;
-	grid-template-columns: 360px 360px;
+	grid-template-columns: repeat(2, 1fr);
 	gap: 40px;
 	list-style-type: none;
-	margin: 0;
+	margin-top: 0;
 	margin-bottom: 44px;
 	padding: 0;
 }
@@ -634,16 +922,32 @@ padding-right: 49px;
 	line-height: 22px;
 }
 
+/* кнопка ЗАГРУЗИТЬ ЕЩЕ*/
 .button-download {
 	font-weight: 800;
 	font-size: 16px;
 	line-height: 19px;
 }
 
+.button-download {
+	width: 100%;
+	height: 55px;
+	border: 3px solid lightgrey;
+	background-color: white;
+	text-transform: uppercase;
+}
+
 .pagination {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	height: 70px;
 	list-style: none;
+	border: none;
+	background-color: #ebebeb;
+	text-transform: uppercase;
+	padding-top: 27px;
 }
 
 .pagination-back {
@@ -652,6 +956,8 @@ padding-right: 49px;
 	line-height: 19px;
 	text-decoration: none;
 	color: #000000;
+	display: flex;
+	justify-content: space-between;
 }
 
 .pagination-forward {
@@ -662,22 +968,16 @@ padding-right: 49px;
 	color: #000000;
 }
 
-.pagination-current {
+.pagination-link {
 	font-family: Rubik, sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
 	color: #444444;
 	text-decoration: none;
+	flex-grow: 1;
 }
 
-.button-download {
-	width: 100%;
-	height: 55px;
-	border: 3px solid lightgrey;
-	background-color: white;
-	text-transform: uppercase;
-}
 /* Подвал */
 
 .footer {
@@ -703,19 +1003,29 @@ padding-right: 49px;
 	color: #ffffff;
 }
 
-.fast-menu-list {
+.footer-menu-list {
 	list-style-type: none;
+	text-decoration: none;
 	display: flex;
 	flex-direction: row;
 	padding: 0;
 }
 
-.fast-menu-item {
+.footer-menu-item {
 	margin-left: 7px;
 }
 
-.fast-menu-item:first-child {
+.footer-menu-item:first-child {
 	margin-left: 0;
+}
+
+.footer-menu-link {
+	font-weight: 800;
+	line-height: 21px;
+	text-decoration: none;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #ffffff;
 }
 
 .footer-contacts-phone {
@@ -732,6 +1042,7 @@ padding-right: 49px;
 	flex-direction: row;
 	justify-content: space-between;
 	list-style-type: none;
+	padding-left: 0;
 }
 
 .footer-social-link {
