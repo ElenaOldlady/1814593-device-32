@@ -10,48 +10,48 @@
 <body>
 	<header class="page-header">
 		<div class="container">
-			<h1 class="visually-hidden">device</h1>
-			<a href="index.html">
-				<img class="logo" src="image/deviceheader.svg" alt="Логотип device" width="145" heigth="36">
-			</a>
-			<nav class="navigation">
-					<ul class="navigation-list navigation-user">
-						<li class="navigation-item search-button">
-							<form class="navigation-form" action="#" method="post">
-								<button class="navigation-button" type="submit"></button>
-								<input class="navigation-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
-							</form>
+			<div class="header-wrapper">
+				<h1 class="visually-hidden">device</h1>
+				<img class="logo" src="image/deviceheader.svg" alt="логотип device" width="145" height="36">
+				<div class="user-block">
+					<form class="search-form" action="#" method="post">
+						<!--<button class="search-button" type="submit"></button>-->
+						<input class="search-input user-text" type="search" name="search" id="search" placeholder="Поиск по сайту">
+					</form>
+					<ul class="user">
+						<li class="user-item">
+							<a class="user-link user-text" href="#">Войти</a>
 						</li>
-					<li class="navigation-item">
-						<a class="navigation-link profile" href="#">Коля Петухов</a>
-					</li>
-					<li class="navigation-item">
-						<a class="navigation-link" href="#">Выйти</a>
-					</li>
-					<li class="navigation-item">
-						<a class="navigation-link" href="#">Сравнить</a>
-					</li>
-					<li class="navigation-item">
-						<a class="navigation-link" href="#">Корзина</a>
-					</li>
-				</ul>
-				<ul class="navigation-list navigation-menu">
-					<li class="navigation-item">
-						<a class="navigation-link" href="catalog.html">Каталог товаров</a>
-					</li>
-					<li class="navigation-item">
-						<a class="navigation-link" href="#">Доставка</a>
-					</li>
-					<li class="navigation-item">
-						<a class="navigation-link" href="#">Гарантия</a>
-					</li>
-					<li class="navigation-item">
-						<a class="navigation-link" href="#">Контакты</a>
-					</li>
-				</ul>
-			</nav>
+					</ul>
+					<ul class="user-alternative">
+						<li class="user-alternative-item ">
+							<a class="user-alternative-link user-text compare" href="#">Сравнить</a>
+						</li>
+						<li class="user-alternative-item">
+							<a class="user-alternative-link user-text basket" href="#">Корзина</a>
+						</li>
+					</ul>
+				</div>
+				<nav class="navigation">
+					<ul class="navigation-menu">
+						<li class="navigation-menu-item">
+							<a class="navigation-menu-link navigation-plus" href="catalog.html">Каталог товаров</a>
+						</li>
+						<li class="navigation-menu-item">
+							<a class="navigation-menu-link" href="#">Доставка</a>
+						</li>
+						<li class="navigation-menu-item">
+							<a class="navigation-menu-link" href="#">Гарантия</a>
+						</li>
+						<li class="navigation-menu-item">
+							<a class="navigation-menu-link" href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</header>
+	
 	<main class="main-inner main-container">
 		<div class="container">
 				<h1 class="inner-name">Моноподы для селфи</h1>
