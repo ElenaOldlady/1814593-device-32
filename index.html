@@ -15,21 +15,41 @@
 				<img class="logo" src="image/deviceheader.svg" alt="логотип device" width="145" height="36">
 				<div class="user-block">
 					<form class="search-form" action="#" method="post">
-						<input class="search-input user-text" type="search" name="search" id="search"
-							placeholder="Поиск по сайту">
+						<input class="search-input user-text" type="search" name="search" id="search" placeholder="Поиск по сайту">
 						<button class="search-button" type="submit"></button>
 					</form>
 					<ul class="user">
 						<li class="user-item">
-							<a class="user-link user-text" href="#">Войти</a>
+							<a class="user-link user-text" href="#">
+								<svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M0 12H13C12.8 9.4 10.9 7.2 8.3 6.5C9.3 5.9 10 4.8 10 3.5C10 1.6 8.4 0 6.5 0C4.6 0 3 1.6 3 3.5C3 4.8 3.7 5.9 4.7 6.5C2.1 7.2 0.2 9.4 0 12Z"
+										fill="black" />
+								</svg>
+								Войти
+							</a>
 						</li>
 					</ul>
 					<ul class="user-alternative">
 						<li class="user-alternative-item ">
-							<a class="user-alternative-link user-text compare" href="#">Сравнить</a>
+							<a class="user-alternative-link user-text compare" href="#">
+								<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6 0H4V12H6V0Z" fill="black" />
+									<path d="M2 4H0V12H2V4Z" fill="black" />
+									<path d="M10 3H8V12H10V3Z" fill="black" />
+								</svg>
+								Сравнить
+							</a>
 						</li>
 						<li class="user-alternative-item">
-							<a class="user-alternative-link user-text basket" href="#">Корзина</a>
+							<a class="user-alternative-link user-text basket" href="#">
+								<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z"
+										fill="black" />
+								</svg>
+								Корзина
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -39,7 +59,7 @@
 							<a class="navigation-menu-link navigation-plus" href="catalog.html">Каталог товаров</a>
 						</li>
 						<li class="navigation-menu-item">
-							<a class="navigation-menu-link" href="#">Доставка</a>
+							<a class="navigation-menu-link " href="#">Доставка</a>
 						</li>
 						<li class="navigation-menu-item">
 							<a class="navigation-menu-link" href="#">Гарантия</a>
@@ -63,8 +83,8 @@
 							<button class="slider-btn slider-btn-prev" type="button">
 								<span class="visually-hidden">Предыдущее фото</span>
 							</button>
-							<img class="slider-image" src="image/slider1.png" alt="Порхает как бабочка, жалит как пчела!"
-								width="560" height="560">
+							<img class="slider-image" src="image/slider1.png" alt="Порхает как бабочка, жалит как пчела!" width="560"
+								height="560">
 							<button class="slider-btn slider-btn-next" type="button">
 								<span class="visually-hidden">Следующее фото</span>
 							</button>
@@ -74,7 +94,26 @@
 							<p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером,
 								замаскированным под стандартную камеру.
 							</p>
-							<a class="btn-link " href="#">Подробнее</a>
+							<div class="details-toggles">
+								<a class="btn-link " href="#">Подробнее</a>
+								<ol class="slider-toggle">
+									<li class="slider-toggle-item">
+										<button class="slider-toggle-button slider-toggle-current" type="button">
+											<span class="visually-hidden">слайд 1</span>
+										</button>
+									</li>
+									<li class="slider-toggle-item">
+										<button class="slider-toggle-button" type="button">
+											<span class="visually-hidden">слайд 2</span>
+										</button>
+									</li>
+									<li class="slider-toggle-item">
+										<button class="slider-toggle-button" type="button">
+											<span class="visually-hidden">слайд 3</span>
+										</button>
+									</li>
+								</ol>
+							</div>
 							<div class="slider-sign">
 								<div class="distance-radius">
 									<p class="slider-info">800 м</p>
@@ -120,7 +159,7 @@
 					<li class="category-item">
 						<a href="#">
 							<div class="category-item-image">
-								<img src="image/actioncameras.svg" alt="Экшн-камеры" width="71" height="87">
+								<img class="action-camera" src="image/actioncameras.svg" alt="Экшн-камеры" width="71" height="87">
 							</div>
 							<p class="category-item-text">Экшн-камеры</p>
 						</a>
@@ -128,7 +167,8 @@
 					<li class="category-item">
 						<a href="#">
 							<div class="category-item-image">
-								<img src="image/fitnessbracelets.svg" alt="Фитнес-браслеты" width="108" height="65">
+								<img class="fitnes-bracelet" src="image/fitnessbracelets.svg" alt="Фитнес-браслеты" width="108"
+									height="65">
 							</div>
 							<div class="category-item-text">
 								<p>Фитнес-браслеты</p>
@@ -148,7 +188,7 @@
 					<li class="category-item">
 						<a href="#">
 							<div class="category-item-image">
-								<img src="image/quadrocopters.svg" alt="Квадрокоптеры" width="132" height="69">
+								<img class="quadrocopter" src="image/quadrocopters.svg" alt="Квадрокоптеры" width="132" height="69">
 							</div>
 							<div class="category-item-text">
 								<p>Квадрокоптеры</p>
@@ -243,7 +283,7 @@
 				</div>
 				<form class="newsletter-form" action="#" method="post">
 					<input class="newsletter-input" type="text" name="sign" id="sign" placeholder="Ваш e-mail">
-					<button class="newsletter-button" type="submit">Подписаться</button>
+					<button class="newsletter-button" type="а яsubmit">Подписаться</button>
 					<p class="newsletter-free">Это бесплатно</p>
 				</form>
 			</div>
@@ -276,7 +316,7 @@
 					</section>
 				</div>
 				<div class="contact-div-phone">
-					<a class="footer-contacts-phone" href="tel:78128121212">+7(812)-812-12-12</a>
+					<a class="footer-contacts-phone" href="tel:78128121212">Тел.: +7(812)-812-12-12</a>
 				</div>
 			</section>
 			<div class="footer-social">
@@ -286,21 +326,36 @@
 						<a class="footer-social-link footer-social-fb" src="/image/Facebook.svg"
 							href="https://www.facebook.com/htmlacademy">
 							<span class="visually-hidden">Facebook</span>
+							<svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0V9H2V18H5V9H8.3L8.9 6H5V4.5C5 3.7 5.3 3 6.5 3Z"
+									fill="#444444" />
+							</svg>
 						</a>
 					</li>
 					<li class="footer-social-item">
 						<a class="footer-social-link footer-social-inst" href="https://www.instagram.com/htmlacademy/">
 							<span class="visually-hidden">Инстаграмм</span>
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M14.7 1.3C13.8 0.4 12.7 0 11.3 0H4.7C1.9 0 0 1.9 0 4.7V11.3C0 12.7 0.4 13.9 1.4 14.7C2.3 15.6 3.4 16 4.7 16H11.3C12.7 16 13.9 15.6 14.7 14.7C15.5 13.8 16 12.7 16 11.3V4.7C16 3.3 15.6 2.1 14.7 1.3ZM8 12.1C5.8 12.1 3.9 10.3 3.9 8C3.9 5.7 5.8 3.9 8 3.9C10.2 3.9 12.1 5.7 12.1 8C12.1 10.3 10.2 12.1 8 12.1ZM12.6 4.7C11.9 4.7 11.3 4.2 11.3 3.4C11.3 2.6 11.8 2.1 12.6 2.1C13.3 2.1 13.9 2.7 13.9 3.4C13.9 4.1 13.3 4.7 12.6 4.7Z"
+									fill="#444444" />
+							</svg>
 						</a>
 					</li>
 					<li class="footer-social-item">
 						<a class="footer-social-link footer-social-tw" href="https://twitter.com/htmlacademy_ru">
 							<span class="visually-hidden">Твиттер</span>
+							<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M9.7 0.0999675C11.2 -0.400033 12.3 0.399967 12.9 1.19997C13.4 0.999967 14 0.799967 14.6 0.599967C14.6 1.39997 14.1 1.99997 13.8 2.19997C14.5 2.39997 15 1.79997 15 1.79997C14.9 2.69997 14.1 3.49997 13.6 3.69997C13.4 9.99997 10.8 14.1 4.7 14C4.2 14 4.8 14 4.3 14C4 14 0.6 13.6 0 12.2C2 12.4 3.4 11.8 4.1 11.1C3.3 10.8 1.7 10.7 1.5 8.29997C1.8 8.49997 2 8.59997 2.6 8.49997C1.5 7.69997 0.3 6.99997 0.4 4.99997C0.7 5.29997 1.3 5.49997 1.6 5.39997C1 5.19997 -0.2 2.29997 0.8 0.799967C2.4 2.49997 4.1 4.19997 7.1 4.29997C7.3 2.19997 8.1 0.799967 9.7 0.0999675Z"
+									fill="#444444" />
+							</svg>
 						</a>
 					</li>
 				</ul>
 				<a class="htmlacademy-link" href="https://htmlacademy.ru/" src="/image/htmlacademy.svg">
-					<svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<svg class="htmlacademy-tab" width="115" height="33" viewBox="0 0 115 33" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
 						<path d="M0 12.8999V15.4999H2.5V12.8999H0Z" fill="#FFC700" />
 						<path
 							d="M11.6 4.5C10 4.5 8.80002 5.2 8.00002 6.2H7.90002V0H5.90002V15.5H7.90002V10.2C7.90002 8.1 9.20002 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z"
@@ -340,6 +395,32 @@
 			</div>
 		</div>
 	</footer>
+
+	<!--
+			<div class="modal-container">
+		<div class="modal modal-auth">
+			<button class="modal-close-button">
+				<span class="visually-hidden">Закрыть</span>
+			</button>
+			<section class="modal-content">
+				<h2 class="modal-title">Доставка под заказ</h2>
+				<form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+					<p class="field-group">
+						<label class="visually-hidden" for="auth-login">Имя Фамилия</label>
+						<input class="auth-form-field field" type="text" id="auth-name" name="auth-name" placeholder="Имя Фамилия">
+					</p>
+					<p class="field-group">
+						<label class="visually-hidden" for="auth-freeform">В свободной форме</label>
+						<input class="auth-form-field field" type="text" id="auth-freeform" name="auth-freeform"
+							placeholder="В свободной форме">
+					</p>
+				</form>
+			</section>
+		</div>
+	</div>
+	-->
+
+
 </body>
 
 </html>
