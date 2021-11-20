@@ -29,8 +29,34 @@
 						</li>
 						<li class="user-alternative-item">
 							<a class="user-alternative-link user-text basket" href="#">Корзина</a>
+              <!--
+              <div class="popover  popover-cart">
+                <div class="popover-content">
+                  <h2 class="visually-hidden popover-title">Корзина</h2>
+                  <ul class="cart-items-list">
+                    <li class="cart-item">
+                      <p class="cart-item-title">Любительская селфи-палка</p>
+                      <button type="button" class="cart-item-button button">
+                        вставить картинку через svg
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                  <li class="cart-item">
+                    <p class="cart-item-title">Профессиональная селфи-палка</p>
+                    <button class="cart-item-button button" type="button">
+                      вставить картинку svg
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  </ul>
+                  <button class="popover-open-button button button-light">
+                    <span class="open-the-shopping-cart">Открыть корзину</span>
+                  </button>
+                </div>
+              </div>
 						</li>
 					</ul>
+          -->
 				</div>
 				<nav class="navigation">
 					<ul class="navigation-menu">
@@ -105,8 +131,100 @@
 							</div>
 						</div>
 					</li>
-					<li></li>
-					<li></li>
+          <!--Худеем правильно!-->
+					<li class="gallery-item gallery-card">
+            <div class="gallery-image">
+              <button class="slider-btn slider-btn-prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <img class="slider-image" src="image/slider2.png" alt="Худеем&nbsp;правильно!" width="560" height="560">
+              <button class="slider-btn slider-btn-next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </div>
+            <div class="title-text">
+              <p class="slider-title"> Худеем правильно!</p>
+              <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <div class="details-toggles">
+                <a class="btn-link" href="#">Подробнее</a>
+                <ol class="slider-toggle">
+                  <li class="slider-toggle-item">
+                    <button class="slider-toggle-button slider-toggle-current" type="button">
+                      <span class="visually-hidden">слайд 1</span>
+                    </button>
+                  </li>
+                  <li class="slider-toggle-item">
+                    <button class="slider-toggle-button" type="button">
+                      <span class="visually-hidden">слайд 2</span>
+                    </button>
+                  </li>
+                  <li class="slider-toggle-item">
+                    <button class="slider-toggle-button" type="button">
+                      <span class="visually-hidden">слайд 3</span>
+                    </button>
+                  </li>
+                </ol>
+              </div>
+              <div class="slider-sign">
+                <div class="distance-radius">
+                  <p class="slider-info">48 часов</p>
+                  <p class="slider-text caption">Без подзарядки</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!--Делай селфи,как Бен Стиллер! -->
+          <li class="gallery-item gallery-card">
+            <div class="gallery-image">
+              <button class="slider-btn slider-btn-prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <img class="slider-image" src="image/slider3.png" alt="Делай селфи,как Бен Стиллер!" width="560" height="560">
+              <button class="slider-btn slider-btn-next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </div>
+            <div class="title-text">
+              <p class="slider-title"> Делай селфи,как Бен Стиллер!</p>
+              <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+              <div class="details-toggles">
+                <a class="btn-link" href="#">Подробнее</a>
+                <ol class="slider-toggle">
+                  <li class="slider-toggle-item">
+                    <button class="slider-toggle-button slider-toggle-current" type="button">
+                      <span class="visually-hidden">слайд 1</span>
+                    </button>
+                  </li>
+                  <li class="slider-toggle-item">
+                    <button class="slider-toggle-button" type="button">
+                      <span class="visually-hidden">слайд 2</span>
+                    </button>
+                  </li>
+                  <li class="slider-toggle-item">
+                    <button class="slider-toggle-button" type="button">
+                      <span class="visually-hidden">слайд 3</span>
+                    </button>
+                  </li>
+                </ol>
+              </div>
+              <div class="slider-sign">
+                <div class="distance-radius">
+                  <p class="slider-info">8,5 м</p>
+                  <p class="slider-text caption">Длина палки</p>
+                </div>
+              <div class="slider-sign">
+                <div class="distance-radius">
+                  <p class="slider-info">5 кг</p>
+                  <p class="slider-text caption">Вес палки</p>
+                </div>
+              <div class="slider-sign">
+                <div class="distance-radius">
+                  <p class="slider-info">Карбон</p>
+                  <p class="slider-text caption">Материал</p>
+                </div>
+              </div>
+            </div>
+          </li>
 				</ul>
 			</div>
 		</section>
@@ -262,7 +380,7 @@
 				</div>
 				<form class="newsletter-form" action="#" method="post">
 					<input class="newsletter-input" type="text" name="sign" id="sign" placeholder="Ваш e-mail">
-					<button class="newsletter-button" type="а яsubmit">Подписаться</button>
+					<button class="newsletter-button" type="submit">Подписаться</button>
 					<p class="newsletter-free">Это бесплатно</p>
 				</form>
 			</div>
@@ -294,8 +412,8 @@
 						</ul>
 					</section>
 				</div>
-				<div class="contact-div-phone">
-					<a class="footer-contacts-phone" href="tel:78128121212">Тел.: +7(812)-812-12-12</a>
+				<div class="contact-phone">
+					<a class="footer-contacts-phone" href="tel:78128121212">Тел.: +7 (812)-812-12-12</a>
 				</div>
 			</section>
 			<div class="footer-social">
